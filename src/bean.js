@@ -1,5 +1,5 @@
 (function (name, context, definition) {
-  if (typeof module != 'undefined' && module.exports) module.exports = definition()
+  if (typeof module != 'undefined' && module.exports) module.exports = definition(name, context)
   else if (typeof define == 'function' && define.amd) define(definition)
   else context[name] = definition()
 })('bean', this, function (name, context) {
