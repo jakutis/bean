@@ -3,7 +3,9 @@ require("smoosh").config({
         "DIST_DIR": "./"
       , "bean": [
             "./src/copyright.js"
+          , "./src/umdBegin.js"
           , "./src/bean.js"
+          , "./src/umdEnd.js"
         ]
     }
   , "JSHINT_OPTS": {
